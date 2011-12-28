@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>{{ title }}</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="css/main.css" />
+</HEAD>
+<BODY>
+<div id="mainbody">
+
+    
+<div id="show">
+
+<div id="navi">
+ 		<div id="logo">iDOUBAN</div>
+		<li><a href='/?class=niki'>日志</a></li>
+		<li><a href='/?class=group'>小组</a></li>
+		<li><a href='/?class=photo'>相册</a></li>
+		<li><a href='/?class=event'>活动</a></li>
+		<li><a href='/?class=wideget'>小站</a></li>
+ 	</div>
+    
+<div id="showdetail">
+<div id='title'>{{ title }}</div>
+<div id='content'><div class="cc">{{ content }}</div></div>
+<div id='datetime'>Time：{{	datetime }}</div>
+
+
+
+<div id="commentlist"><span>处理状态<span>
+<p>Just Waitin....We 're on the way~~~</p>
+
+</div>
+</div>
+
+
+<div id="comment" style="display:none">
+<form action="/comment" method="post">
+<textarea name="comment"></textarea>
+<input type="hidden" name="id" value="{{ mid }}" ><p>
+<input type="submit" name="submit" value="评论">
+<form>
+</div>
+
+</div>
+</BODY>
+</HTML>

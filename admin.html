@@ -1,0 +1,27 @@
+<html>
+ <head>
+	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+	<title>我要备份一下</title>
+  </head>
+  <body>
+  <div>
+	<form action="/admin/write" method="post">
+地址(页面url)：	  <div class="wtitle"><textarea name="title" rows="3" cols="20" scorll=""></textarea></div>
+简介(可以不填的哦~~~)：<div class="wcontent"><textarea name="content" rows="10" cols="20"></textarea></div>
+类别(麻烦您一定要选对~~~)：<div class="wtitle">
+<select name="cls">
+<option value="niki">日志</option>
+<option value="group">小组</option>
+<option value="photo">相册</option>
+<option value="event">活动</option>
+<option value="wideget">小站</option>
+	
+</select>
+</div>
+<div><input type="hidden" name="mid" value={{ mid }}></div>
+      <div><input type="submit" value="Go~~~"></div>
+    </form>
+   <div>
+  </body>
+</html>

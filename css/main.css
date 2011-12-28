@@ -1,0 +1,32 @@
+#container{width:350px;height:500px;border:#00acda 5px solid;}
+#mainbody{margin:0 auto;text-align:center;}
+ul{margin:0;padding:0;}
+li{margin:0;padding:0;list-style:none;}
+#navi{width:100%;height:40px;background-color:#4db670}
+#navi #logo{float:left;color:#fff;background-color:#000;line-height:40px;width:80px;}
+#navi li{float:left;margin-left:20px;margin-top:5px;line-height:30px;color:#fff;}
+#navi li a{text-decoration:none;color:#fff;}
+#navi li a:hover{text-decoration:underline;color:#ff9934;}
+#page {width:auto;height:40px;background-color:#4AB673;}
+#page li{float:left;margin-left:50px;line-height:30px;}
+#page li a{float:left;text-decoration:none;color:#fff;}
+#page li a:hover{text-decoration:underline;color:#FF4500;}
+#page p{float:right;margin-right:0px;height:40px;background-color: #fff;margin-top:0px;width:80px;}
+#page p a{line-height:40px;font-size:20px;text-decoration:none;color:#ffffff;background-color:#000000;display:block;}
+#page p a:hover{color:#fff;background-color:#4db670;}
+
+#contents{width:auto;background-color:#EFF7EF;height:420px;}
+#contents p{font-size:14px;margin-bottom:5px;}
+#contents li{list-style:none;margin-bottom:5px;color:#4AB673;}
+#contents li a{list-style:none;margin-left:20px;margin-top:5px;font-size:16px;color:#4AB673;text-decoration:none;}
+#contents li a:hover{color:#FF4500;text-decoration:underline;}
+.wtitle textarea{height:40px;margin-bottom:5px;border:2px solid red;overflow:hidden;}
+.wcontent textarea{height:150px;margin-bottom:5px;border:1px solid #0066FF}
+#show{width:400px;height:579px;background:#EFF7EF;border:5px solid green;}
+#showdetail{margin:0 ;padding:5px;}
+#title{float:left;color:#EF6110;margin-bottom:20px;font-size:18px;width:100%;text-align:center;}
+#content{float:left;width:100%;margin-bottom:10px;}
+#content .cc{color:#087921;width:90%;border:1px solid #EF6110;padding:10px;}
+#commentlist{float:left;}
+#datetime{float:left;margin-bottom:20px;margin-left:0px;width:100%;color:#252525;}
+#comment{margin-left:110px;float:left;margin-top:20px;}
