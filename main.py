@@ -75,25 +75,22 @@ class ShowMe(webapp.RequestHandler):
 		self.response.out.write(template.render(path,template_values))
 class adminCheck(webapp.RequestHandler):
 	def get(self):
-		print 'Content-Type:text/html'
-		print '<html>Enter The Verify Code Plz!'
-		print "<form action='admin' method='post'><input name='password' type='password'><br><input type='submit' value='Sumit'></form></html>"
+
+		self.response.out.write("<html>Enter The Verify Code Plz!")
+		self.response.out.write("<form action='admin' method='post'><input name='password' type='password'>(<font color='red'>idouban</font>)<br><input type='submit' value='Sumit'></form></html>")
 	def post(self):
 		pwd=self.request.get('password')
 		if pwd=='idouban':
-			print 'Content-Type:text/html'
 			mid=0
 			ccs=db.GqlQuery("SELECT * FROM Twim ORDER BY  date DESC LIMIT 1")
 		        for cc in ccs:
 				mid=int(cc.mid)+1
-			print 'Ok'
 			template_values={'mid':mid}
 			path = os.path.join(os.path.dirname(__file__),'admin.html')
 			self.response.out.write(template.render(path,template_values))
 		else:
-			print 'Content-Type:text/html'
-			print "Sorry,Password is Wrong"
-			print "<form action='admincheck' method='post'><input name='password' type='password'><br><input type='submit' value='Sumit'></form>"
+			self.response.out.write("Sorry,The Verify Code is Wrong")
+			self.response.out.write("<form action='admin' method='post'><input name='password' type='password'><br><input type='submit' value='Sumit'></form>")
 			
 class Guestbook(webapp.RequestHandler):
 	def post(self):
